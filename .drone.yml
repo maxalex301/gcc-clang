@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: build
+    image: plugins/docker
+    settings:
+      registry: docker.lab71.net:5000
+      insecure: true
+      repo: docker.lab71.net:5000/gcc-clang
